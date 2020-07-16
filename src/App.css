@@ -24,6 +24,29 @@ input {
   margin-bottom: 20px;
 }
 
+button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Mulish", sans-serif;
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 180px;
+  border-radius: 50px;
+  background: #ecf0f3;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 10px 10px 16px #dee2e4, -10px -10px 16px #fafeff;
+  cursor: pointer;
+}
+
+button:active {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #d4d8db, #fdffff);
+  box-shadow: 10px 10px 19px #d2d6d8, -10px -10px 19px #ffffff;
+  transition: all 3s ease;
+}
+
 .chartainer {
   max-width: 800px;
   margin: auto;

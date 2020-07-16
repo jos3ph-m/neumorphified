@@ -15,7 +15,7 @@ const lengthCheck = (props) => {
 
   return (
     <div>
-      <p className="length">Current length is: {inputLength}</p>
+      <p className="length">Current amount is: {inputLength}</p>
     </div>
   );
 };

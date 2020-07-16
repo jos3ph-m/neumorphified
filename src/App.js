@@ -21,6 +21,12 @@ class App extends Component {
     this.setState({ userInput: updatedText });
   };
 
+  deleteAllChar = () => {
+    this.setState({
+      userInput: "",
+    });
+  };
+
   render() {
     const charList = this.state.userInput.split("").map((char, index) => {
       return (
@@ -48,6 +54,10 @@ class App extends Component {
           onChange={this.inputHandler}
           value={this.state.userInput}
         />
+        <div>
+          <button onClick={this.deleteAllChar}>Clear</button>
+        </div>
+
         <LengthCheck inputLength={this.state.userInput.length} />
         <div className="chartainer">{charList}</div>
       </div>
