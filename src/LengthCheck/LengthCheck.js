@@ -6,16 +6,14 @@ const lengthCheck = (props) => {
   let lengthMessage = "";
 
   if (inputLength === 0) {
-    lengthMessage = "Please enter characters above";
+    lengthMessage = `Please enter characters above`;
   } else {
-    lengthMessage = "Current amount of characters is: ";
+    lengthMessage = `Current amount of characters is: ${inputLength}`;
   }
 
   return (
     <div>
-      <p className="length">
-        {inputLength === 0 ? lengthMessage : lengthMessage + inputLength}
-      </p>
+      <p className="length">{lengthMessage}</p>
     </div>
   );
 };
