@@ -5,17 +5,17 @@ const lengthCheck = (props) => {
   const { inputLength } = props;
   let lengthMessage = "";
 
-  if (inputLength >= 5) {
-    lengthMessage = "Long enough";
-  } else if (inputLength === 0) {
-    lengthMessage = "There's no message";
+  if (inputLength === 0) {
+    lengthMessage = "Please enter characters above";
   } else {
-    lengthMessage = "Not long enough";
+    lengthMessage = "Current amount of characters is: ";
   }
 
   return (
     <div>
-      <p className="length">Current amount is: {inputLength}</p>
+      <p className="length">
+        {inputLength === 0 ? lengthMessage : lengthMessage + inputLength}
+      </p>
     </div>
   );
 };
