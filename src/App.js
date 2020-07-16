@@ -49,7 +49,7 @@ class App extends Component {
           value={this.state.userInput}
         />
         <LengthCheck inputLength={this.state.userInput.length} />
-        {charList}
+        <div className="chartainer">{charList}</div>
       </div>
     );
   }
