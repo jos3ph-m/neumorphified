@@ -1,6 +1,6 @@
 # Neumorphified React
 
-A simple React app built to pass props and manipulate state.
+A simple React app built to take input, calculate it's length, and allow you to remove characters - all decorated in neumorphic fashion.
 
 Want to get started?:
 
