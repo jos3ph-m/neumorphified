@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import LengthCheck from "./LengthCheck/LengthCheck";
+import Char from "./Char/Char";
 
 class App extends Component {
   state = {
@@ -12,9 +13,27 @@ class App extends Component {
       userInput: e.target.value,
     });
   };
+
+  deleteChar = (index) => {
+    const text = this.state.userInput.split("");
+    text.splice(index, 1);
+    const updatedText = text.join("");
+    this.setState({ userInput: updatedText });
+  };
+
   render() {
+    const charList = this.state.userInput.split("").map((char, index) => {
+      return (
+        <Char
+          character={char}
+          key={index}
+          clicked={() => this.deleteChar(index)}
+        />
+      );
+    });
     return (
       <div className="App">
+        <h1>Neumorphic Length Check</h1>
         {/* <ol>
             <li>Create an input field (in App component) with a change listener which outputs the length of the entered text below it (e.g. in a paragraph).</li>
             <li>Create a new component (=> ValidationComponent) which receives the text length as a prop</li>
@@ -30,6 +49,7 @@ class App extends Component {
           value={this.state.userInput}
         />
         <LengthCheck inputLength={this.state.userInput.length} />
+        {charList}
       </div>
     );
   }

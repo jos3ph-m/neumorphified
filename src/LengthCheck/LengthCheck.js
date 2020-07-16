@@ -1,4 +1,5 @@
 import React from "react";
+import "./Length.css";
 
 const lengthCheck = (props) => {
   const { inputLength } = props;
@@ -14,7 +15,7 @@ const lengthCheck = (props) => {
 
   return (
     <div>
-      <p>{lengthMessage}</p>
+      <p className="length">Current length is: {inputLength}</p>
     </div>
   );
 };

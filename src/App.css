@@ -1,39 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+
+body {
+  box-sizing: border-box;
+  background: #ecf0f3;
+  font-family: "Mulish", sans-serif;
+  color: #abaeaf;
+}
+
+input {
+  font-family: "Mulish", sans-serif;
+  height: 25px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #ecf0f3;
+  color: #abaeaf;
+  box-shadow: inset 10px 10px 16px #dee2e4, inset -10px -10px 16px #fafeff;
+}
+
+.length {
+  font-size: 50px;
+}
+
 .App {
   margin-top: 50px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
