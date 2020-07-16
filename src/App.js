@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import LengthCheck from "./LengthCheck/LengthCheck";
 
 class App extends Component {
   state = {
@@ -28,7 +29,7 @@ class App extends Component {
           onChange={this.inputHandler}
           value={this.state.userInput}
         />
-        <p>{this.state.userInput}</p>
+        <LengthCheck inputLength={this.state.userInput.length} />
       </div>
     );
   }
